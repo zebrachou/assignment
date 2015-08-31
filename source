@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class order {
 	public static void main(String[] args) {
 		int quantity = 0;
-		 String answer="No";
+		 String i="No";
 		 int ａ = 0;
 		Scanner console = new Scanner(System.in);	
 		FoodItem burger = new FoodItem("Burger", 3.0, 0);
@@ -73,8 +73,8 @@ public class order {
 				System.out.println("Sorry, we do not have it.");
 			}
 			System.out.println("Do you want anything else? (Enter anything to continue, enter No to check out：");
-	    answer=console.next();
-	    if(answer.equals("No"))
+	    i=console.next();
+	    if(i.equals("No"))
 	     break;
 	   }while(true);	
 		double total = 0;
