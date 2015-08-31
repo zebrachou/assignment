@@ -13,7 +13,8 @@ public class assignment1 {
 	    FoodItem coke =new FoodItem("Coke",1.0,300,270,0);
 	    FoodItem tea =new FoodItem("tea",5.0,1000,10,0);
 	    FoodItem water =new FoodItem("water",2.0,900,600,0);
-		FoodItem[] foodarray = {burger, taco, sandwich, hotdog, pizza,coke,tea, water};
+		FoodItem[] foodarray = {burger, taco, sandwich, hotdog, pizza};
+                DrinkItem[] drinkarray={coke,tea,water};
 		do{
 			System.out.println("--------------------------");
 			System.out.println("Press 1 for Burgers: ");
