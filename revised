@@ -13,7 +13,7 @@ public class assignment1 {
 	    FoodItem coke =new FoodItem("Coke",1.0,300,270,0);
 	    FoodItem tea =new FoodItem("tea",5.0,1000,10,0);
 	    FoodItem water =new FoodItem("water",2.0,900,600,0);
-		FoodItem[] luncharray = {burger, taco, sandwich, hotdog, pizza,coke,tea, water};
+		FoodItem[] foodarray = {burger, taco, sandwich, hotdog, pizza,coke,tea, water};
 		do{
 			System.out.println("--------------------------");
 			System.out.println("Press 1 for Burgers: ");
@@ -81,10 +81,10 @@ public class assignment1 {
 		System.out.println();
 		System.out.printf("%15s%15s%15s%15s\n", "Items", "Price", "Quantity", "Sub_total");
 		System.out.println("-------------------------------------------------------------");
-		for (int i = 0; i< luncharray1.length; i++){	
+		for (int i = 0; i< drinkarray.length; i++){	
 		    System.out.printf("%15s%15.2f%15d%15.2f\n",luncharray1[i].get_name(), luncharray1[i].get_price(), luncharray1[i].get_quantity(), luncharray1[i].get_price()*luncharray1[i].get_quantity());
 		}
-		for (int i = 0; i< luncharray.length; i++){
+		for (int i = 0; i< foodarray.length; i++){
 		    System.out.printf("%15s%15.2f%15d%15.2f\n", luncharray[i].get_name(), luncharray[i].get_price(), luncharray[i].get_quantity(), luncharray[i].get_price()*luncharray[i].get_quantity());
 		}	
 		System.out.println("-------------------------------------------------------------");
